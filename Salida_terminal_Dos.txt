@@ -1,0 +1,86 @@
+Last login: Wed May 31 21:14:19 on ttys004
+ximena@MacBook-Pro-de-Ximena ~ % cd Destop.
+cd: no such file or directory: Destop.
+ximena@MacBook-Pro-de-Ximena ~ % cd Desktop.
+cd: no such file or directory: Desktop.
+ximena@MacBook-Pro-de-Ximena ~ % cd TechDev
+cd: no such file or directory: TechDev
+ximena@MacBook-Pro-de-Ximena ~ % cd Introduccion
+cd: no such file or directory: Introduccion
+ximena@MacBook-Pro-de-Ximena ~ % ls 
+Applications
+Consul
+Desktop
+Documents
+Downloads
+IdeaProjects
+Library
+Movies
+Music
+OneDrive - Universidad Central del Ecuador
+Pictures
+Postman
+Public
+VirtualBox VMs
+data
+guide-microprofile-reactive-messaging-acknowledgment
+java_error_in_idea.hprof
+mongodb
+mongodb-macos-x86_64-6.0.0.tgz
+nltk_data
+openproject
+wlpExtract
+ximena@MacBook-Pro-de-Ximena ~ % cd Desktop     
+ximena@MacBook-Pro-de-Ximena Desktop % cd TechDev     
+ximena@MacBook-Pro-de-Ximena TechDev % cd Introduccion
+ximena@MacBook-Pro-de-Ximena TechDev % cp -r introduccion/Salida_terminal.txt introduccion/Actividades
+ximena@MacBook-Pro-de-Ximena TechDev % cd introduccion
+ximena@MacBook-Pro-de-Ximena introduccion % cd Actividades
+ximena@MacBook-Pro-de-Ximena Actividades % ls
+Deportes acuaticos	Deportes de mesa	Salida_terminal.txt
+Deportes de equipo	Deportes mentales
+ximena@MacBook-Pro-de-Ximena Actividades % git status
+En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	.DS_Store
+	Deportes acuaticos/
+	Deportes de equipo/
+	Deportes de mesa/
+	Deportes mentales/
+	Salida_terminal.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ximena@MacBook-Pro-de-Ximena Actividades % git add . 
+ximena@MacBook-Pro-de-Ximena Actividades % git commit -m "Subiendo cambios desde terminal"
+[master (commit-raíz) 7fbc3ac] Subiendo cambios desde terminal
+ 14 files changed, 233 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 Deportes acuaticos/Ajedrez.txt
+ create mode 100644 Deportes acuaticos/Basquet
+ create mode 100644 Deportes acuaticos/Ping pong
+ create mode 100644 Deportes de equipo/Ajedrez.txt
+ create mode 100644 Deportes de equipo/Basquet
+ create mode 100644 Deportes de equipo/Ping pong
+ create mode 100644 Deportes de mesa/Ajedrez.txt
+ create mode 100644 Deportes de mesa/Basquet
+ create mode 100644 Deportes de mesa/Ping pong
+ create mode 100644 Deportes mentales/Ajedrez.txt
+ create mode 100644 Deportes mentales/Basquet
+ create mode 100644 Deportes mentales/Ping pong
+ create mode 100644 Salida_terminal.txt
+ximena@MacBook-Pro-de-Ximena Actividades % git branch -M main
+ximena@MacBook-Pro-de-Ximena Actividades % git push -u origin main
+Enumerando objetos: 6, listo.
+Contando objetos: 100% (6/6), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (5/5), listo.
+Escribiendo objetos: 100% (6/6), 2.62 KiB | 2.62 MiB/s, listo.
+Total 6 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To https://github.com/jenxime/Parte_Practica_Introduccion.git
+ * [new branch]      main -> main
+rama 'main' configurada para rastrear 'origin/main'.
+ximena@MacBook-Pro-de-Ximena Actividades % 

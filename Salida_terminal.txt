@@ -45,36 +45,7 @@ usage: rm [-f | -i] [-dPRrvW] file ...
 ximena@MacBook-Pro-de-Ximena Deportes acuaticos % rm -r Actividades
 ximena@MacBook-Pro-de-Ximena Deportes acuaticos % ls
 Ajedrez.txt	Basquet		Ping pong
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -fi Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -fi Ajedrez.txt Basquet "Ping pong" /"Deportes de mesa"
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp "Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" /"Deportes de mesa"
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp "Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp "Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/Ajedrez.txt Basquet "Ping pong"
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp /"Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/Ajedrez.txt Basquet "Ping pong"
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp /"Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" /"Deportes de mesa"/Ajedrez.txt Basquet "Ping pong"
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -R Ajedres.txt Basquet "Ping pong" "Deportes de mesa"/
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
-ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -R Ajedres.txt Basquet "Ping pong" "Deportes de mesa"
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+
 ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cd ..
 ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Ajedres.txt Basquet "Ping pong" "Deportes de mesa"
 cp: Deportes acuaticos/Ajedres.txt: No such file or directory
