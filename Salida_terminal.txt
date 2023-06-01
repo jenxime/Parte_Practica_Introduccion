@@ -1,0 +1,233 @@
+Last login: Wed May 31 19:49:48 on ttys003
+ximena@MacBook-Pro-de-Ximena ~ % cd Desktop    
+ximena@MacBook-Pro-de-Ximena Desktop % cd TechDev
+ximena@MacBook-Pro-de-Ximena TechDev % cd introduccion
+ximena@MacBook-Pro-de-Ximena introduccion % ls
+D			Mochila_Guaman_Jeniffer	pruebaGit
+ximena@MacBook-Pro-de-Ximena introduccion % mkdir Practica Uno
+ximena@MacBook-Pro-de-Ximena introduccion % ls
+D			Practica		pruebaGit
+Mochila_Guaman_Jeniffer	Uno
+ximena@MacBook-Pro-de-Ximena introduccion % touch uno dos.txt 
+ximena@MacBook-Pro-de-Ximena introduccion % ls
+D			Practica		dos.txt
+Mochila_Guaman_Jeniffer	Uno			pruebaGit
+ximena@MacBook-Pro-de-Ximena introduccion % touch tres nuevo.txt cuatro nuevo.txt
+ximena@MacBook-Pro-de-Ximena introduccion % ls
+D			Uno			nuevo.txt
+Mochila_Guaman_Jeniffer	cuatro			pruebaGit
+Practica		dos.txt			tres
+ximena@MacBook-Pro-de-Ximena introduccion % mkdir Actividades
+ximena@MacBook-Pro-de-Ximena introduccion % cd Actividades
+ximena@MacBook-Pro-de-Ximena Actividades % mkdir "Deportes de equipo" "Deportes acuaticos" "Deportes extremos" "Deportes de mesa" "Deportes mentales"
+ximena@MacBook-Pro-de-Ximena Actividades % ls
+Deportes acuaticos	Deportes de mesa	Deportes mentales
+Deportes de equipo	Deportes extremos
+ximena@MacBook-Pro-de-Ximena Actividades % cd "Deportes acuaticos"
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % touch Basquet Ajedrez.txt "Ping pong"    
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % mkdir Actividades/{Nuevo, Listo, Actual}
+zsh: parse error near `}'
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % mkdir -p Actividades/{Nuevo, Listo, Actual}
+zsh: parse error near `}'
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % mkdir -p Actividades/{Nuevo,Listo,Actual} 
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % ls
+Actividades	Ajedrez.txt	Basquet		Ping pong
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cd Actividades
+ximena@MacBook-Pro-de-Ximena Actividades % ls
+Actual	Listo	Nuevo
+ximena@MacBook-Pro-de-Ximena Actividades % cd ..
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % rm Actividades
+rm: Actividades: is a directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % rm -D Actividades
+rm: illegal option -- D
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % rm -r Actividades
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % ls
+Ajedrez.txt	Basquet		Ping pong
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -fi Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -fi Ajedrez.txt Basquet "Ping pong" /"Deportes de mesa"
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp "Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" /"Deportes de mesa"
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp "Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp "Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/Ajedrez.txt Basquet "Ping pong"
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp /"Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"/Ajedrez.txt Basquet "Ping pong"
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp /"Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" /"Deportes de mesa"/Ajedrez.txt Basquet "Ping pong"
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -R Ajedres.txt Basquet "Ping pong" "Deportes de mesa"/
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cp -R Ajedres.txt Basquet "Ping pong" "Deportes de mesa"
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cd ..
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Ajedres.txt Basquet "Ping pong" "Deportes de mesa"
+cp: Deportes acuaticos/Ajedres.txt: No such file or directory
+cp: Basquet: No such file or directory
+cp: Ping pong: No such file or directory
+ximena@MacBook-Pro-de-Ximena Actividades % ls 
+Deportes acuaticos	Deportes de mesa	Deportes mentales
+Deportes de equipo	Deportes extremos
+ximena@MacBook-Pro-de-Ximena Actividades % cd "Deportes acuaticos"
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % ls
+Ajedrez.txt	Basquet		Ping pong
+ximena@MacBook-Pro-de-Ximena Deportes acuaticos % cd ..                  
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Ajedres.txt Deportes de mesa" 
+dquote> 
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Ajedres.txt "Deportes de mesa"
+cp: Deportes acuaticos/Ajedres.txt: No such file or directory
+ximena@MacBook-Pro-de-Ximena Actividades % ls
+Deportes acuaticos	Deportes de mesa	Deportes mentales
+Deportes de equipo	Deportes extremos
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Ajedres.txt "Deportes mentales"
+cp: Deportes acuaticos/Ajedres.txt: No such file or directory
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Ajedrez.txt Basquet "Ping pong" "Deportes de mesa"
+cp: Basquet: No such file or directory
+cp: Ping pong: No such file or directory
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Basquet,"Ping pong" "Deportes de mesa" 
+cp: Deportes acuaticos/Basquet,Ping pong: No such file or directory
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/Basquet "Deportes de mesa"
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/"Ping pong" "Deportes de mesa" 
+ximena@MacBook-Pro-de-Ximena Actividades % cd "Deportes de mesa"
+ximena@MacBook-Pro-de-Ximena Deportes de mesa % ls
+Ajedrez.txt	Basquet		Ping pong
+ximena@MacBook-Pro-de-Ximena Deportes de mesa % cd ..
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/* "Deportes mentales" 
+ximena@MacBook-Pro-de-Ximena Actividades % cd "Deportes mentales"
+ximena@MacBook-Pro-de-Ximena Deportes mentales % ls
+Ajedrez.txt	Basquet		Ping pong
+ximena@MacBook-Pro-de-Ximena Deportes mentales % cd ..
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/* "Deportes de equipo" 
+ximena@MacBook-Pro-de-Ximena Actividades % cp -r "Deportes acuaticos"/* "Deportes extremos" 
+ximena@MacBook-Pro-de-Ximena Actividades % ls -R
+Deportes acuaticos	Deportes de mesa	Deportes mentales
+Deportes de equipo	Deportes extremos
+
+./Deportes acuaticos:
+Ajedrez.txt	Basquet		Ping pong
+
+./Deportes de equipo:
+Ajedrez.txt	Basquet		Ping pong
+
+./Deportes de mesa:
+Ajedrez.txt	Basquet		Ping pong
+
+./Deportes extremos:
+Ajedrez.txt	Basquet		Ping pong
+
+./Deportes mentales:
+Ajedrez.txt	Basquet		Ping pong
+ximena@MacBook-Pro-de-Ximena Actividades % rm "Deportes extremos"
+rm: Deportes extremos: is a directory
+ximena@MacBook-Pro-de-Ximena Actividades % rm -r "Deportes extremos"
+ximena@MacBook-Pro-de-Ximena Actividades % pwd
+/Users/ximena/Desktop/TechDev/introduccion/Actividades
+ximena@MacBook-Pro-de-Ximena Actividades % git init
+ayuda: Usando 'master' como el nombre de la rama inicial. Este nombre de rama predeterminado
+ayuda: está sujeto a cambios. Para configurar el nombre de la rama inicial para usar en todos
+ayuda: de sus nuevos repositorios, reprimiendo esta advertencia, llama a:
+ayuda: 
+ayuda: 	git config --global init.defaultBranch <nombre>
+ayuda: 
+ayuda: Los nombres comúnmente elegidos en lugar de 'master' son 'main', 'trunk' y
+ayuda: 'development'. Se puede cambiar el nombre de la rama recién creada mediante este comando:
+ayuda: 
+ayuda: 	git branch -m <nombre>
+Inicializado repositorio Git vacío en /Users/ximena/Desktop/TechDev/introduccion/Actividades/.git/
+ximena@MacBook-Pro-de-Ximena Actividades % git status
+En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	Deportes acuaticos/
+	Deportes de equipo/
+	Deportes de mesa/
+	Deportes mentales/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ximena@MacBook-Pro-de-Ximena Actividades % git commit -m "primer commit"
+En la rama master
+
+Confirmación inicial
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	Deportes acuaticos/
+	Deportes de equipo/
+	Deportes de mesa/
+	Deportes mentales/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ximena@MacBook-Pro-de-Ximena Actividades % git remote add origin https://github.com/jenxime/Parte_Practica_Introduccion.git
+ximena@MacBook-Pro-de-Ximena Actividades % git push -u origin main
+error: src refspec main no concuerda con ninguno
+error: falló el empuje de algunas referencias a 'https://github.com/jenxime/Parte_Practica_Introduccion.git'
+ximena@MacBook-Pro-de-Ximena Actividades % git status
+En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	Deportes acuaticos/
+	Deportes de equipo/
+	Deportes de mesa/
+	Deportes mentales/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ximena@MacBook-Pro-de-Ximena Actividades % histori
+zsh: command not found: histori
+ximena@MacBook-Pro-de-Ximena Actividades % history
+ 1065  cd "Deportes mentales"
+ 1066  ls
+ 1067  cd ..
+ 1068  cp -r "Deportes acuaticos"/* "Deportes de equipo" 
+ 1069  cp -r "Deportes acuaticos"/* "Deportes extremos" 
+ 1070  ls -R
+ 1071  rm "Deportes extremos"
+ 1072  rm -r "Deportes extremos"
+ 1073  pwd
+ 1074  git init
+ 1075  git status
+ 1076  git commit -m "primer commit"
+ 1077  git remote add origin https://github.com/jenxime/Parte_Practica_Introduccion.git
+ 1078  git push -u origin main
+ 1079  git status
+ 1080  histori
+ximena@MacBook-Pro-de-Ximena Actividades % history *
+fc: event not found: Deportes acuaticos
+ximena@MacBook-Pro-de-Ximena Actividades % history  
+ 1067  cd ..
+ 1068  cp -r "Deportes acuaticos"/* "Deportes de equipo" 
+ 1069  cp -r "Deportes acuaticos"/* "Deportes extremos" 
+ 1070  ls -R
+ 1071  rm "Deportes extremos"
+ 1072  rm -r "Deportes extremos"
+ 1073  pwd
+ 1074  git init
+ 1075  git status
+ 1076  git commit -m "primer commit"
+ 1077  git remote add origin https://github.com/jenxime/Parte_Practica_Introduccion.git
+ 1078  git push -u origin main
+ 1079  git status
+ 1080  histori
+ 1081  history
+ 1082  history *
+ximena@MacBook-Pro-de-Ximena Actividades % 
